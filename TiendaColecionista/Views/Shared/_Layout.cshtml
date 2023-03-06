@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/normalize.css" rel="stylesheet" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header th:fragment="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""> <img src="https://cdn-icons-png.flaticon.com/512/5221/5221822.png" width="40" height="40" class="d-inline-block align-top" alt="" />  La Ferre</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-izquierda" aria-current="page" href=""><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-izquierda" href=""><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Mas sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-izquierda" href=""><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-izquierda" href=""><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div>
+                        <li class="nav-item">
+                            <a class="nav-link active nav-izquierda2" href=""><img src="http://cdn.onlinewebfonts.com/svg/img_311846.png" width="25" height="25" class="d-inline-block align-top" alt="" /> Login</a>
+                        </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link active nav-izquierda2" href=""><img src="https://cdn-icons-png.flaticon.com/512/154/154345.png" width="25" height="25" class="d-inline-block align-top" alt="" /> Registrarse</a>
+                    </li>
+                    </li>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+
+        <footer>
+            <div class="footer-cont">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">SOBRE NOSOTROS</h4>
+                        <p class="mb-0">Somos La Ferre una empresa dedicada a la venta de materiales,herramientras,cableado y demas productos para pequeñas o grandes obras a solo unos pocos clicks.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">INFORMACION</h4>
+                        <p>
+                            <a>Numero: +506 4055 2001</a><br>
+                            <a href="mailto:soporte@laferre.com">soporte@laferre.com</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">SOCIOS COMERCIALES</h4>
+                        <img src="https://1000marcas.net/wp-content/uploads/2022/06/Stanley-Logo.png" width="70" height="40" alt="stanley" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Philips_logo_new.svg/2560px-Philips_logo_new.svg.png" width="60" height="40" alt="philips" />
+                        <img src="https://logos-world.net/wp-content/uploads/2020/06/Visa-Logo-2014.png" width="60" height="40" alt="Visa" />
+                        <img src="https://logosmarcas.net/wp-content/uploads/2020/09/Mastercard-Logo-2016-2020.png" width="60" height="40" alt="Mastercard" />
+                    </div>
+                </div>
+
+                    <div>
+                        <h3 style="font-size: 30px; text-transform: capitalize">SIGUENOS: </h3>
+                        <ul class="socialmedia">
+                            <li><a  href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/?msclkid=b1784819abf211eca4613ea94873a212"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>&copy; 2023 <Span>LA FERRE</Span></p>
+                </div>
+</footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
