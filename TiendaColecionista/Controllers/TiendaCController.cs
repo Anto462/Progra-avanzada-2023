@@ -13,5 +13,9 @@ namespace TiendaColecionista.Controllers
         {
             return View();
         }
+        public ActionResult Sobrenos()
+        {
+            return View();
+        }
     }
 }
