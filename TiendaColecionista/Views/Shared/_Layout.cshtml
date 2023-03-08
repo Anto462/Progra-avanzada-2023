@@ -10,6 +10,7 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/normalize.css" rel="stylesheet" />
     <link href="~/Content/Styles.css" rel="stylesheet" />
+    <link href="~/Views/estilos/correctivos.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,12 +22,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 bajar_ul">
                         <li class="nav-item">
                             <a class="nav-link active nav-izquierda" aria-current="page" href=""><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <p class="nav-link active nav-izquierda"><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" /> @Html.ActionLink("Mas sobre nosotros", "Sobrenos", "TiendaC") </p>
+                        <li class="nav-item li_masSobreNosotros">
+                            <p class="nav-link active nav-izquierda"><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" /> @Html.ActionLink("Mas sobre nosotros", "Sobrenos", "TiendaC", new {@class =" nolink "}) </p>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active nav-izquierda"><img src="https://pngimg.com/uploads/star/star_PNG1592.png" width="25" height="25" class="d-inline-block align-top" alt="" />  Productos</a>
@@ -36,7 +37,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse hhh" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <div>
                         <li class="nav-item">
@@ -71,8 +72,8 @@
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">INFORMACION</h4>
                         <p>
-                            <a>Numero: +506 4055 2001</a><br>
-                            <a href="mailto:soporte@laferre.com">soporte@laferre.com</a>
+                            <a class="numero" >Numero: +506 4055 2001</a><br>
+                            <a class="mail" href="mailto:soporte@laferre.com">soporte@laferre.com</a>
                         </p>
                     </div>
                     <div class="col-lg-4">
@@ -85,14 +86,14 @@
                 </div>
 
                     <div>
-                        <h3 style="font-size: 30px; text-transform: capitalize">SIGUENOS: </h3>
+                        <h3 style="font-size: 23px; text-transform: capitalize">SIGUENOS: </h3>
                         <ul class="socialmedia">
-                            <li><a  href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="https://www.instagram.com/?msclkid=b1784819abf211eca4613ea94873a212"><i class="fa fa-instagram"></i></a></li>
+                            <li><a  href="https://www.facebook.com/"><i style="font-size: 20px;" class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.youtube.com/"><i  style="font-size: 20px;" class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com/?msclkid=b1784819abf211eca4613ea94873a212"><i style="font-size: 20px;" class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                    <p>&copy; 2023 <Span>LA FERRE</Span></p>
+                    <p  style="font-size: 20px;" >&copy; 2023 <Span  style="font-size: 20px;">LA FERRE</Span></p>
                 </div>
 </footer>
     </div>
