@@ -163,7 +163,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Roboto Mono', monospace;
 }
 
 .footer-cont {
@@ -195,3 +194,19 @@ footer {
 
 /* Fin Footer */
 
+/* Correctivos*/
+
+.navbar-expand-lg .navbar-collapse {
+    flex-basis: min-content;
+}
+
+.nav-link active .nav-izquierda2 {
+    margin-right: 30px !important;
+}
+
+.white{
+    color:white;
+}
+.white:hover {
+    color: whitesmoke;
+}
